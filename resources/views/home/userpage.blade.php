@@ -20,6 +20,10 @@
       <link href="home/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    </head>
    <body>
       <div class="hero_area">
@@ -43,6 +47,67 @@
       <!-- end product section -->
       @include('home.product')
       <!-- subscribe section -->
+
+
+      <!-----Comment and reply system starts here-->
+
+      <div style="text-align: center; padding-bottom: 30px;">
+
+      <h1 style="font-size: 30px; text-align:center; padding-top:20px; padding-bottom:20px; ">Comments</h1>
+
+      <form action="{{ url('add_comment') }}" method="POST">
+         @csrf
+
+         <textarea style="height: 150px; width: 600px;"  name="comment" id="" cols="30" rows="10" placeholder="Comment something here"></textarea>
+
+         <br>
+         <input type="submit" class="btn btn-primary" name="" value="Comment">
+
+
+      </form>
+
+      </div>
+
+      <div style="padding-left: 20%;">
+
+         <h1 style="font-size: 20px; padding-bottom: 20px;">All Comments</h1>
+
+
+      
+         @foreach($comment as $comment )
+            
+         
+      <div>
+
+         <b>{{ $comment->name }}</b>
+         <p>{{ $comment->comment }}</p>
+
+         <a href="javascript::void(0);" onclick="reply(this)">Reply</a>
+
+
+      </div>
+      @endforeach
+      
+   
+
+
+      <div style="display: none;" class="replyDiv">
+
+         <textarea style="height: 100px; width: 500px; "  placeholder="Write Something Here" name="" id="" cols="30" rows="10"></textarea>
+
+         <a href="" class="btn btn-primary">Reply</a>
+
+      </div>
+
+
+      </div>
+
+
+     
+
+      <!-----Comment and reply system ends here-->
+
+
       @include('home.subscribe')
       <!-- end subscribe section -->
       <!-- client section -->
@@ -58,6 +123,16 @@
          
          </p>
       </div>
+
+      <script> type="text/javascript">
+      
+      function reply(caller)
+      {
+         $('.replyDiv').insertAfter($(caller));
+
+         $('.replyDiv').show();
+      }
+      </script>
       <!-- jQery -->
       <script src="home/js/jquery-3.4.1.min.js"></script>
       <!-- popper js -->
