@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!-- Basic Laravel -->
+      <!-- Basic Laravel  https://github.com/noahJ101/Ecom.git -->  
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- Mobile Metas -->
