@@ -18,6 +18,7 @@
         text-align: center;
         font-size: 40px;
         padding-top: 20px;
+           
     }
     .img_size
     {

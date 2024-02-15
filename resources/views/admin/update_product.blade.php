@@ -3,6 +3,7 @@
   <head>
     <!-- Required meta tags -->
     
+    <base href="/public">
 
     @include('admin.css')
     <style type="text/css">

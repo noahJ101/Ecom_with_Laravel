@@ -59,6 +59,7 @@ route::get('/order', [AdminController::class, 'order']);
 
 route::get('/search', [AdminController::class, 'searchdata']); 
 
+route::post('/update_product_confirm/{id}', [AdminController::class, 'update_product_confirm']); 
 
 
 

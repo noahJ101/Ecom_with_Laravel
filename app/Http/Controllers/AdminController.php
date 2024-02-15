@@ -84,6 +84,7 @@ class AdminController extends Controller
         {
             return redirect('login');
         }
+    
        
     }
     public function add_product(Request $request)
