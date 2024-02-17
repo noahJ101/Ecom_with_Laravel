@@ -111,12 +111,15 @@
       <div style="display: none;" class="replyDiv">
 
          <form action="{{ url('add_reply') }}" method="POST">
+
+         @csrf
+
          <input type="text" id="commentId" name="commentId" hidden="">
          <textarea style="height: 100px; width: 500px; " name="reply" placeholder="Write Something Here" name="" id="" cols="30" rows="10"></textarea>
 
          <br>
 
-         <button type="submit" class="btn btn warning">Reply</button>
+         <input type="submit" class="btn btn-primary">Reply</input>
 
          <a href="javascript::void(0);" class="btn" onclick="reply_close(this)">Close</a>
 

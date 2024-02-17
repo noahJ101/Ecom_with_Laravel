@@ -100,7 +100,7 @@
                       Fast Delivery
                    </h5>
                    <p>
-                      variations of passages of Lorem Ipsum available
+                   With our lightning-fast shipping options, you can expect your order to arrive in record time.
                    </p>
                 </div>
              </div>
@@ -215,7 +215,7 @@
                       Free Shiping
                    </h5>
                    <p>
-                      variations of passages of Lorem Ipsum available
+                   Yes, you read that right – no more worrying about hitting a certain spending threshold to qualify for free shipping 
                    </p>
                 </div>
              </div>
@@ -236,7 +236,7 @@
                       Best Quality
                    </h5>
                    <p>
-                      variations of passages of Lorem Ipsum available
+                   Discover the best quality products for every aspect of your life at [Your E-commerce Site Name]. Your satisfaction is our guarantee! 
                    </p>
                 </div>
              </div>

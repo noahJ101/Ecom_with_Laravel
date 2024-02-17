@@ -16,7 +16,7 @@
     .table_deg
     {
         border: 2px solid white;
-        width: 100%;
+        width: auto;
         margin: auto;
         text-align: center;
     }
@@ -33,6 +33,7 @@
     }
     </style>
   </head>
+  
   <body>
     <div class="container-scroller">
       <div class="row p-0 m-0 proBanner" id="proBanner">
@@ -151,4 +152,7 @@
     <!-- container-scroller -->
     <!-- plugins:js -->
     @include('admin.script')
+  </div>
+  </body>
+  </div>
 </html>

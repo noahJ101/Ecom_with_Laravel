@@ -17,7 +17,9 @@
                             On Everything
                          </h1>
                          <p>
-                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                         We're thrilled to announce our biggest sale yet: Get ready to indulge because EVERYTHING is now 20% off at our online store!
+
+From trendy fashion pieces to must-have gadgets, from cozy home essentials to thoughtful gifts, we've got something for everyone – and now at unbeatable prices.
                          </p>
                          <div class="btn-box">
                             <a href="" class="btn1">

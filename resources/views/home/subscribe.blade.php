@@ -7,7 +7,7 @@
                    <div class="heading_container heading_center">
                       <h3>Subscribe To Get Discount Offers</h3>
                    </div>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                   <p>Subscribe today and elevate your shopping experience. Get ready to shop smarter, save more, and discover endless possibilities! </p>
                    <form action="">
                       <input type="email" placeholder="Enter your email">
                       <button>

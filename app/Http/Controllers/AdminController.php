@@ -18,6 +18,8 @@ use Notification;
 
 use App\Notifications\MyForstNotification;
 
+use RealRashid\SweetAlert\Facades\Alert;
+
 class AdminController extends Controller
 {
     public function view_category()
@@ -63,6 +65,8 @@ class AdminController extends Controller
             $data=category::find($id);
 
             $data->delete();
+
+            Alert::success('Product Deleted Scuccessfully', 'We have deleted product from Category');
     
             return redirect()->back()->with('message', 'Category Deleted Succesfully');
         }
@@ -105,6 +109,8 @@ class AdminController extends Controller
             $product->image=$imagename;
     
             $product->save();
+
+            Alert::success('Product Added Scuccessfully', 'We have Added Product ');
     
             return redirect()->back()->with('message', 'Product_Added Successfully');
         }
@@ -138,8 +144,10 @@ class AdminController extends Controller
             $product=product::find($id);
 
             $product->delete();
+
+            Alert::success('Product Deleted Scuccessfully', 'We have deleted product');
     
-            return redirect()->back()->with('message', 'Product Deleted Succesfully');
+            return redirect()->back();
         }
 
         else
