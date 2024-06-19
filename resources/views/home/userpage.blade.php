@@ -26,7 +26,7 @@
        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    </head>
    <body>
-
+      @include('cookie-consent')
       @include('sweetalert::alert')
       
       <div class="hero_area">
